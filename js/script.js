@@ -15,9 +15,7 @@ for (key in pupil) {
 
 var short2 = document.getElementById('info2')
 
-var classe = {
-    pupils: []
-}
+var pupils = [];
 
 var pupil2 = {
     Name: 'Andrea',
@@ -37,9 +35,9 @@ var pupil4 = {
     Age: 92 // Woah.
 }
 
-classe.pupils.push(pupil2);
-classe.pupils.push(pupil3);
-classe.pupils.push(pupil4);
+pupils.push(pupil2);
+pupils.push(pupil3);
+pupils.push(pupil4);
 
 // Output is down in part 3
 
@@ -83,7 +81,7 @@ for(n = 1; n <= addedStudents; n++) {
         }
     }   
 
-    classe.pupils.push({
+    pupils.push({
         Name: moreStudentsName,
         Surname: moreStudentsSurname,
         Age: moreStudentsAge
@@ -91,9 +89,9 @@ for(n = 1; n <= addedStudents; n++) {
 
 }
 
-for (i = 0; i < classe.pupils.length; i++) {
-    for (key in classe.pupils[i]) {
-        short2.innerHTML += key + ': ' + classe.pupils[i][key] + '<br><br>';
+for (i = 0; i < pupils.length; i++) {
+    for (key in pupils[i]) {
+        short2.innerHTML += key + ': ' + pupils[i][key] + '<br><br>';
     }
     short2.innerHTML += '______________________<br><br>'
 }
